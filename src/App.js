@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import {useState} from 'react';
 import Search from './components/Search';
 import DropDown from './components/DropDown';
 import Translate from './components/Translate';
@@ -36,7 +36,7 @@ const options = [
 
 
 
-export default () => {
+const App = () => {
    const [selected,setSelected] = useState(options[0]);
     return<div>
     <Header/>
@@ -61,3 +61,4 @@ export default () => {
     </div>
     
 };
+export default App;
